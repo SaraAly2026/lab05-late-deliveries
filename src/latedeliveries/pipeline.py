@@ -26,9 +26,7 @@ def build_pipeline(model):
         ]
     )
 
-    categorical_transformer = OneHotEncoder(
-        handle_unknown="ignore"
-    )
+    categorical_transformer = OneHotEncoder(handle_unknown="ignore")
 
     preprocessor = ColumnTransformer(
         transformers=[
